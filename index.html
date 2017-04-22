@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/app.css" rel="stylesheet" />
+		<link href="css/icons-extra.css" rel="stylesheet"  />
+		<style>
+			.func-icon{color:#008000;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<h1 class="mui-title">快乐学车</h1>
+		</header>
+		<div id="slider" class="mui-slider index-slider">
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/yuantiao.jpg">
+					</a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/shuijiao.jpg">
+					</a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/muwu.jpg">
+					</a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/cbd.jpg">
+					</a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/yuantiao.jpg">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/shuijiao.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+		<div class="">
+			<ul class="mui-table-view mui-grid-view mui-grid-9">
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+					<a login-type="0" id="baoming" href="pages/baoming.html">
+						<span class="mui-icon mui-icon-compose func-icon"></span>
+						<div class="mui-media-body">学车报名</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+					<a login-type="0" id="study" href="pages/study.html">
+						<span class="mui-icon-extra mui-icon-extra-xiaoshuo func-icon" style="font-size:41px;"></span>
+						<div class="mui-media-body">理论学习</div>
+					</a>
+				</li> 
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+					<a login-type="0" id="yuyue" href="pages/quick-book.html">
+						<span class="mui-icon mui-icon-chatbubble func-icon"></span>
+						<div class="mui-media-body">预约学车</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+					<a login-type="0" id="about" href="pages/about.html">
+						<span class="mui-icon mui-icon-person func-icon"></span>
+						<div class="mui-media-body">了解我们</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+					<a login-type="0" id="faq" href="pages/faq.html">
+						<span class="mui-icon mui-icon-search func-icon"></span>
+						<div class="mui-media-body">常见问题</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+					<a login-type="0" id="call" href="#">
+						<span class="mui-icon mui-icon-phone func-icon"></span>
+						<div class="mui-media-body">咨询服务</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item" href="#" style="color: #323232;">
+				<span class="mui-icon mui-icon-home "></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="#" style="color:#008000">
+				<span class="mui-icon mui-icon-chatbubble" ></span>
+				<span class="mui-tab-label">预约学车</span>
+			</a>
+			<a class="mui-tab-item" id="mine" href="/pages/mine.html"  style="color: #888888;">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+	</body>
+
+</html>
+<script src="js/mui.min.js"></script>
+<script src="js/index.js"></script>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/app.css" rel="stylesheet" />
+		<link href="../css/icons-extra.css" rel="stylesheet" />
+		<style>
+			body,html{height: 100%}
+			.mui-control-content {
+				background-color: transparent;
+				
+			}
+			.mui-slider-group{
+				height: 500px;
+			}
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+			.icon-wrong{
+				font-size: 18px;
+				color: #FFFFFF;
+				background: #CF2D28;
+				border: none; 
+			}
+			.icon-right{
+				font-size: 18px;
+				color: #FFFFFF;
+				background: #008000;
+				border: none;
+			}
+			
+			ul{border: none !important;background: transparent !important;padding: 0;margin: 0;}
+			ul li{border: none !important;background: transparent !important;padding: 0;margin: 0;}
+			.mui-content{background-color: #FFFFFF;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<h1 class="mui-title">我的收藏</h1>
+			<button class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left back-button"><span class="mui-icon mui-icon-left-nav"></span>理论</button>
+			<button class="mui-btn  mui-btn-link mui-pull-right right-button">学习模式</button>
+		</header>
+		<div class="mui-content ">
+
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active" style="border: none;">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-content-padded">
+									<div class="exer">
+										<div class="exer-title-con">
+											<span class="exer-type">单选题</span><span class="exer-title">这段道路所在车道是什么车道?</span>
+										</div>
+										<img src="../images/exer-img-1.jpg" />
+										<div class="exer-answer">
+											<div class="exer-answer-item"><span class="exer-answer-circle">A</span>快速车道</div>
+											<div class="exer-answer-item"><span class="exer-answer-circle">B</span>慢速车道</div>
+											<div class="exer-answer-item"><span class="exer-answer-circle">C</span>专用车道</div>
+											<div class="exer-answer-item"><span class="exer-answer-circle">D</span>应急车道</div>
+										</div>
+										<div class="right-answer-box">
+											<div class="right-answer">
+												正确答案:A
+											</div>
+											<div class="right-answer-explain">
+												《实施条例》第四十四条：在道路同方向划有2条以上机动车道的，左侧为快速车道，右侧为慢速车道。
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content mui-active" style="border: none;">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-content-padded">
+									<div class="exer">
+										<div class="exer-title-con">
+											<span class="exer-type">单选题</span><span class="exer-title">这段道路所在车道是什么车道?</span>
+										</div>
+										<img src="../images/exer-img-1.jpg" />
+										<div class="exer-answer">
+											<div class="exer-answer-item">
+												<span class="exer-answer-circle mui-icon mui-icon-closeempty icon-wrong wrong-a hide"></span>
+												<span class="mui-icon mui-icon-checkmarkempty exer-answer-circle icon-right right-a hide"></span>
+												<span class="exer-answer-circle answer-a">A</span>
+												快速车道
+											</div>
+											<div class="exer-answer-item">
+												<span class="exer-answer-circle mui-icon mui-icon-closeempty icon-wrong wrong-b"></span>
+												<span class="mui-icon mui-icon-checkmarkempty exer-answer-circle icon-right right-b"></span>
+												慢速车道
+											</div>
+											<div class="exer-answer-item"><span class="exer-answer-circle">C</span>专用车道</div>
+											<div class="exer-answer-item"><span class="exer-answer-circle">D</span>应急车道</div>
+										</div>
+										<div class="right-answer-box">
+											<div class="right-answer">
+												正确答案:B
+											</div>
+											<div class="right-answer-explain">
+												《实施条例》第四十四条：在道路同方向划有2条以上机动车道的，左侧为快速车道，右侧为慢速车道。
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<nav id="footer" class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item " href="#item1mobile" style="color: #323232;">
+				<span class="mui-icon mui-icon-undo"></span>
+				<span class="mui-tab-label">上一题</span>
+			</a>
+			<a class="mui-tab-item " href="#item2mobile" style="color: #323232;">
+				<span class="mui-icon mui-icon-redo"></span>
+				<span class="mui-tab-label">下一题</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-contact"  style="color: #323232;">
+				<span class="mui-icon mui-icon-star"></span>
+				<span class="mui-tab-label">已收藏</span>
+			</a>
+			<a class="mui-tab-item " id="choiceBtn" style="color: #323232;">
+				<span class="mui-icon mui-icon-bars"></span>
+				<span class="mui-tab-label"><span class="color-red">1</span>/1000</span>
+			</a>
+		</nav>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/exercise.js"></script>

@@ -1,0 +1,117 @@
+{
+  "index.html": {
+    "resources": [
+      "images/cbd.jpg",
+      "fonts/mui-icons-extra.ttf",
+      "images/muwu.jpg",
+      "images/yuantiao.jpg",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "images/shuijiao.jpg",
+      "css/icons-extra.css",
+      "js/index.js"
+    ],
+    "refer": [
+      "pages/study.html",
+      "pages/baoming.html",
+      "pages/quick-book.html",
+      "pages/mine.html"
+    ]
+  },
+  "pages/study.html": {
+    "resources": [
+      "js/study.js",
+      "fonts/mui-icons-extra.ttf",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/icons-extra.css"
+    ],
+    "refer": [
+      "pages/exercise.html"
+    ]
+  },
+  "pages/baoming.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "js/baoming.js",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "pages/baoming-confirm.html"
+    ]
+  },
+  "pages/baoming-confirm.html": {
+    "resources": [
+      "js/baoming-confirm.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "pages/baoming-pay.html"
+    ]
+  },
+  "pages/baoming-pay.html": {
+    "resources": [
+      "js/baoming-pay.js"
+    ]
+  },
+  "pages/exercise.html": {
+    "resources": [
+      "images/exer-img-1.jpg",
+      "js/exercise.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/icons-extra.css"
+    ],
+    "refer": [
+      "pages/exercise-choice.html"
+    ]
+  },
+  "pages/exercise-choice.html": {
+    "resources": [
+      "js/exercise-choice.js",
+      "js/vue.min.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "css/mui.min.css",
+      "css/icons-extra.css",
+      "fonts/mui.ttf"
+    ]
+  },
+  "pages/quick-book.html": {
+    "resources": [
+      "js/study.js",
+      "fonts/mui-icons-extra.ttf",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/icons-extra.css"
+    ],
+    "refer": [
+      "pages/exercise.html"
+    ]
+  },
+  "pages/mine.html": {
+    "resources": [
+      "images/cbd.jpg",
+      "fonts/mui-icons-extra.ttf",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/study.js",
+      "css/icons-extra.css"
+    ]
+  }
+}

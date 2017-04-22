@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/app.css" rel="stylesheet" />
+		<link href="../css/icons-extra.css" rel="stylesheet" />
+		<style>
+			.mui-control-content {
+				background-color: transparent;
+				min-height: 300px;
+			}
+			
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+			
+			.mui-content-padded {
+				margin: 5px;
+			}
+			
+			.mui-bar,
+			.mui-bar-nav {
+				box-shadow: none !important;
+				-webkit-box-shadow: none !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header ">
+			<h1 class="mui-title">快速预约</h1>
+			<button class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left back-button"><span class="mui-icon mui-icon-left-nav"></span>首页</button>
+		</header>
+
+		<div class="mui-content qui-bo-con">
+			<div class="qui-bo-type">
+				<span class="qui-bo-type-wrapper">
+					<span class="mui-active">科目二</span>
+				<span>科目三</span>
+				</span>
+
+			</div>
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-negative">
+					<a class="mui-control-item mui-active" href="#item1mobile">
+						今天
+						<div>4-02</div>
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						明天
+						<div>4-03</div>
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						周一
+						<div>4-04</div>
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						周二
+						<div>4-05</div>
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						周三
+						<div>4-06</div>
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						周四
+						<div>4-07</div>
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						周五
+						<div>4-08</div>
+					</a>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active" style="border: none;">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-content-padded qui-bo-grid">
+
+									<ul class="mui-row">
+										<li class="mui-col-xs-6 ">
+											<div class="box">
+												<div class="mui-media-body">07:00-09:00</div>
+												<p>不可预约</p>
+												<a class="mui-active"><span class="mui-icon mui-icon-checkmarkempty"></span></a>
+											</div>
+
+										</li>
+										<li class=" mui-col-xs-6">
+											<div class="box">
+												<div class="mui-media-body">07:00-09:00</div>
+												<p>不可预约</p>
+												<a class="hide"><span class="mui-icon mui-icon-checkmarkempty"></span></a>
+											</div>
+										</li>
+										<li class=" mui-col-xs-6">
+											<div class="box">
+												<div class="mui-media-body">07:00-09:00</div>
+												<p>可预约<span class="color-red">1</span>人</p>
+												<a class=""><span class="mui-icon mui-icon-checkmarkempty"></span></a>
+											</div>
+										</li>
+										<li class=" mui-col-xs-6">
+											<div class="box">
+												<div class="mui-media-body">07:00-09:00</div>
+												<p>已约满</p>
+												<a class="hide"><span class="mui-icon mui-icon-checkmarkempty"></span></a>
+											</div>
+										</li>
+										<li class=" mui-col-xs-6">
+											<div class="box">
+												<div class="mui-media-body">07:00-09:00</div>
+												<p>已约满</p>
+												<a class="hide"><span class="mui-icon mui-icon-checkmarkempty"></span></a>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="mui-content-padded">
+					平时每日最多预约2个课时，周末每日最多预约1个课时，一周最多预约6个课时。
+				</p>
+
+			</div>
+		</div>
+		<div class="bm-fix-bottom">
+			<div class="mui-pull-right">
+				<span class="color-money">已选择0节课</span>
+				<button class="">确认预约</button>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/study.js"></script>

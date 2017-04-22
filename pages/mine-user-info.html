@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/app.css" rel="stylesheet" />
+		<link href="../css/icons-extra.css" rel="stylesheet" />
+		<style>
+			.mine-user-info .head {
+				height: 40px;
+			}
+			.mine-user-info #head {
+				line-height: 40px;
+			}
+			.mine-user-info .head-img {
+				width: 40px;
+				height: 40px;
+			}
+			.mine-user-info .mui-table-view-cell span{color: #888888;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header ">
+			<h1 class="mui-title">我的信息</h1>
+			<button class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left back-button"><span class="mui-icon mui-icon-left-nav"></span>我的</button>
+		</header>
+		<div class="mui-content mine-user-info">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a id="head" class="">头像
+						<span class="mui-pull-right head">
+									<img class="head-img mui-action-preview" id="head-img1" src="../images/cbd.jpg"/>
+								</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a>姓名<span class="mui-pull-right">徐文明</span></a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a>手机号<span class="mui-pull-right">158****7245</span></a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a>身价证<span class="mui-pull-right">350322********1111</span></a>
+				</li>
+			</ul>
+			<div class="mui-content-padded"><h5>注：修改信息请联系客服</h5></div>
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/study.js"></script>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/app.css" rel="stylesheet" />
+		<link href="../css/icons-extra.css" rel="stylesheet" />
+		<style>
+			.mui-control-content {
+				background-color: transparent;
+				min-height: 415px;
+			}
+			
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+			
+			.box {
+				background: #FFFFFF;
+				border-radius: 5px;
+				padding: 20px;
+			}
+			
+			.yellow {
+				color: #6641E2;
+			}
+			
+			.size-60 {
+				font-size: 60px;
+			}
+			
+			.complete-num {
+				color: #CF2D28;
+				margin-left: 10px;
+			}
+			ul{border: none !important;background: transparent !important;padding: 0;margin: 0;}
+			ul li{border: none !important;background: transparent !important;padding: 0;margin: 0;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header ">
+			<h1 class="mui-title">理论学习</h1>
+			<button class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left back-button"><span class="mui-icon mui-icon-left-nav"></span>首页</button>
+		</header>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-negative">
+					<a class="mui-control-item" href="#item1mobile">
+						科目一
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						科目四
+					</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6"></div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active" style="border: none;">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-content-padded">
+									<div class="box st-exercise">
+										<a id="exercise" href="/pages/exercise.html" >
+										<span class="mui-icon-extra mui-icon-extra-topic yellow size-60 mui-pull-left"></span>
+										<div class="" style="margin-left: 80px;">
+											<div>考题练习</div>
+											<p>已完成<span class="complete-num">4</span>/1300</p>
+											<p class="mui-progressbar mui-progressbar-royal" data-progress="10"><span></span></p>
+										</div>
+										</a>
+									</div>
+									<ul class="mui-table-view mui-grid-view mui-grid-9" >
+										<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6 " >
+											<a id="exerciseWrong" href="/pages/exercise-wrong.html" class="box">
+												<span class="mui-icon mui-icon-compose func-icon yellow"></span>
+												<div class="mui-media-body">我的错题</div>
+												<p>2道</p>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+											<a id="exerciseFavorite" href="/pages/exercise-favorite.html"  class="box">
+												<span class="mui-icon-extra mui-icon-extra-xiaoshuo func-icon yellow" style="font-size:41px;"></span>
+												<div class="mui-media-body">我的收藏</div>
+												<p>0道</p>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+											<a login-type="0" id="yuyue" href="/pages/examination-skill.html"  class="box">
+												<span class="mui-icon mui-icon-chatbubble func-icon yellow"></span>
+												<div class="mui-media-body">考试技巧</div>
+												<p>&nbsp;</p>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+											<a login-type="0" id="about" href="pages/about.html"  class="box">
+												<span class="mui-icon mui-icon-help yellow"></span>
+												<div class="mui-media-body">科一考规</div>
+												<p>&nbsp;</p>
+											</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content" style="border: none;">
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-content-padded">
+									<div class="box">
+										<span class="mui-icon-extra mui-icon-extra-topic yellow size-60 mui-pull-left"></span>
+										<div class="" style="margin-left: 80px;">
+											<div>考题练习</div>
+											<p>已完成<span class="complete-num">5</span>/1300</p>
+											<p class="mui-progressbar mui-progressbar-royal" data-progress="10"><span></span></p>
+										</div>
+									</div>
+									<ul class="mui-table-view mui-grid-view mui-grid-9" >
+										<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6 " >
+											<a login-type="0" id="baoming" href="pages/baoming.html" class="box">
+												<span class="mui-icon mui-icon-compose func-icon yellow"></span>
+												<div class="mui-media-body">我的错题</div>
+												<p>2道</p>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+											<a login-type="0" id="study" href="pages/study.html"  class="box">
+												<span class="mui-icon-extra mui-icon-extra-xiaoshuo func-icon yellow" style="font-size:41px;"></span>
+												<div class="mui-media-body">我的收藏</div>
+												<p>0道</p>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+											<a login-type="0" id="yuyue" href="pages/yuyue.html"  class="box">
+												<span class="mui-icon mui-icon-chatbubble func-icon yellow"></span>
+												<div class="mui-media-body">考试技巧</div>
+												<p>&nbsp;</p>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+											<a login-type="0" id="about" href="pages/about.html"  class="box">
+												<span class="mui-icon mui-icon-help yellow"></span>
+												<div class="mui-media-body">科一考规</div>
+												<p>&nbsp;</p>
+											</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/study.js"></script>

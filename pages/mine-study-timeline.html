@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/app.css" rel="stylesheet" />
+		<link href="../css/icons-extra.css" rel="stylesheet" />
+		<style>
+			.msg-item {
+				padding: 8px;
+				clear: both;
+			}
+			
+			.msg-item .mui-item-clear {
+				clear: both;
+			}
+			
+			.msg-item .msg-user {
+				width: 38px;
+				height: 38px;
+				border: solid 1px #d3d3d3;
+				display: inline-block;
+				background: #fff;
+				border-radius: 3px;
+				vertical-align: top;
+				text-align: center;
+				float: left;
+				padding: 3px;
+				color: #ddd;
+			}
+			
+			.msg-item .msg-user-img {
+				width: 38px;
+				height: 38px;
+				display: inline-block;
+				border-radius: 3px;
+				vertical-align: top;
+				text-align: center;
+				float: left;
+				color: #ddd;
+			}
+			
+			.msg-item .msg-content {
+				display: inline-block;
+				border-radius: 5px;
+				border: solid 1px #d3d3d3;
+				background-color: #FFFFFF;
+				color: #333;
+				padding: 8px;
+				vertical-align: top;
+				font-size: 15px;
+				position: relative;
+				margin: 0px 8px;
+				max-width: 75%;
+				min-width: 35px;
+				float: left;
+				width: 100%;
+			}
+			
+			.msg-item .msg-content .msg-content-inner {
+				overflow-x: hidden;
+			}
+			
+			.msg-item .msg-content .msg-content-arrow {
+				position: absolute;
+				border: solid 1px #d3d3d3;
+				border-right: none;
+				border-top: none;
+				background-color: #FFFFFF;
+				width: 10px;
+				height: 10px;
+				left: -5px;
+				top: 12px;
+				-webkit-transform: rotateZ(45deg);
+				transform: rotateZ(45deg);
+			}
+			
+			
+			
+			.msg-item-left-img{
+				width: 40px;
+				height: 100%;
+				display: inline-block;
+				float: left;
+			}
+			
+			.msg-item-left-img .msg-item-circle{
+				width: 15px;
+				height: 15px;
+				display: inline-block;
+				border: 3px #DDDDDD solid;
+				background: #BBBBBB;
+				border-radius: 50%;
+				position: relative;
+				top: 10px;
+				left: 10px;
+			}
+			
+			.msg-item-left-img .msg-item-divider{
+				width: 1px;
+				height: 50px;
+				background: #DDDDDD;
+				border-left: 1px #DDDDDD solid;
+				display: inline-block;
+				position: absolute;
+				left: 25px;
+			}
+			
+			
+			.mui-active .msg-item-circle{
+				background:#008000 !important;
+				border-color: #259B24;
+			}
+			.mui-active .msg-content,.mui-active .msg-content-arrow{
+				background:#008000 !important;
+				color: #FFFFFF;
+				border-color: #008000 !important;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header ">
+			<h1 class="mui-title">我的学车进度</h1>
+			<button class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left back-button"><span class="mui-icon mui-icon-left-nav"></span>我的</button>
+		</header>
+		<div class="mui-content mine-study-timeline">
+			<div id='msg-list'>
+				<div class="msg-item ">
+					<div class="msg-item-left-img">
+						<span class="msg-item-divider"></span>
+						<span class="msg-item-circle"></span>
+						
+					</div>
+					<div class="msg-content">
+						<div class="msg-content-inner">
+							已支付预付款0元
+						</div>
+						<div class="msg-content-arrow"></div>
+					</div>
+				</div>
+				<div class="msg-item mui-active">
+					<div class="msg-item-left-img">
+						<span class="msg-item-divider"></span>
+						<span class="msg-item-circle"></span>
+						
+					</div>
+					<div class="msg-content">
+						<div class="msg-content-inner">
+							在快乐学车报名缴费
+						</div>
+						<div class="msg-content-arrow"></div>
+					</div>
+				</div>
+				<div class="msg-item ">
+					<div class="msg-item-left-img">
+						<span class="msg-item-divider"></span>
+						<span class="msg-item-circle"></span>
+						
+					</div>
+					<div class="msg-content">
+						<div class="msg-content-inner">
+							通过学车体检
+						</div>
+						<div class="msg-content-arrow"></div>
+					</div>
+				</div>
+				<div class="msg-item ">
+					<div class="msg-item-left-img">
+						<span class="msg-item-divider"></span>
+						<span class="msg-item-circle"></span>
+						
+					</div>
+					<div class="msg-content">
+						<div class="msg-content-inner">
+							预约学习科目一
+						</div>
+						<div class="msg-content-arrow"></div>
+					</div>
+				</div>
+				<div class="msg-item ">
+					<div class="msg-item-left-img">
+						<span class="msg-item-divider"></span>
+						<span class="msg-item-circle"></span>
+						
+					</div>
+					<div class="msg-content">
+						<div class="msg-content-inner">
+							通过科目一考试
+						</div>
+						<div class="msg-content-arrow"></div>
+					</div>
+				</div>
+				<div class="msg-item ">
+					<div class="msg-item-left-img">
+						<span class="msg-item-divider"></span>
+						<span class="msg-item-circle"></span>
+						
+					</div>
+					<div class="msg-content">
+						<div class="msg-content-inner">
+							科目二学习中
+						</div>
+						<div class="msg-content-arrow"></div>
+					</div>
+				</div>
+				<div class="msg-item ">
+					<div class="msg-item-left-img">
+						<span class="msg-item-divider"></span>
+						<span class="msg-item-circle"></span>
+						
+					</div>
+					<div class="msg-content">
+						<div class="msg-content-inner">
+							通过科目二考试
+						</div>
+						<div class="msg-content-arrow"></div>
+					</div>
+				</div>
+				<div class="msg-item ">
+					<div class="msg-item-left-img">
+						<span class="msg-item-divider"></span>
+						<span class="msg-item-circle"></span>
+						
+					</div>
+					<div class="msg-content">
+						<div class="msg-content-inner">
+							科目三学习中
+						</div>
+						<div class="msg-content-arrow"></div>
+					</div>
+				</div>
+				<div class="msg-item ">
+					<div class="msg-item-left-img">
+						<span class="msg-item-divider"></span>
+						<span class="msg-item-circle"></span>
+						
+					</div>
+					<div class="msg-content">
+						<div class="msg-content-inner">
+							通过科目三考试
+						</div>
+						<div class="msg-content-arrow"></div>
+					</div>
+				</div>
+				<div class="msg-item ">
+					<div class="msg-item-left-img">
+						<span class="msg-item-divider"></span>
+						<span class="msg-item-circle"></span>
+						
+					</div>
+					<div class="msg-content">
+						<div class="msg-content-inner">
+							预约学习科目四
+						</div>
+						<div class="msg-content-arrow"></div>
+					</div>
+				</div>
+				<div class="msg-item ">
+					<div class="msg-item-left-img">
+						<span class="msg-item-divider"></span>
+						<span class="msg-item-circle"></span>
+						
+					</div>
+					<div class="msg-content">
+						<div class="msg-content-inner">
+							通过科目四考试
+						</div>
+						<div class="msg-content-arrow"></div>
+					</div>
+				</div>
+				<div class="msg-item ">
+					<div class="msg-item-left-img">
+						<span class="msg-item-divider"></span>
+						<span class="msg-item-circle"></span>
+						
+					</div>
+					<div class="msg-content">
+						<div class="msg-content-inner">
+							领取驾驶证
+						</div>
+						<div class="msg-content-arrow"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/study.js"></script>
